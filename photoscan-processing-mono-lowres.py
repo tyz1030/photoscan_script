@@ -123,14 +123,14 @@ def process(images_path, output_path, model_name):
 	# Add scalebars between stereo images
 	# This is the baseline between two cameras.
 	# Iver3 system is 6" baseline, 0.1524 meters.
-	index = 0
+	# index = 0
 
-	while(True):
-		scalebar = chunk.addScalebar(chunk.cameras[index],chunk.cameras[index+1])
-		scalebar.reference.distance = 0.1282
-		index+=2
-		if index >= len(chunk.cameras):
-			break	
+	# while(True):
+	# 	scalebar = chunk.addScalebar(chunk.cameras[index],chunk.cameras[index+1])
+	# 	scalebar.reference.distance = 0.1282
+	# 	index+=2
+	# 	if index >= len(chunk.cameras):
+	# 		break	
 
 	### Estimate image quality	
 	chunk.estimateImageQuality(chunk.cameras)
