@@ -61,7 +61,7 @@ def process(images_path, output_path, model_name):
 	tiepoints         = 4000 	# Align photos tie point limit
 	source            = PhotoScan.DataSource.DenseCloudData # Build mesh/DEM source
 	surface           = PhotoScan.SurfaceType.Arbitrary # Build mesh surface type
-	quality           = PhotoScan.Quality.HighQuality # Build dense cloud quality
+	quality           = PhotoScan.Quality.MediumQuality # Build dense cloud quality
 	filtering         = PhotoScan.FilterMode.AggressiveFiltering # Depth filtering
 	interpolation     = PhotoScan.Interpolation.EnabledInterpolation # Build mesh interpolation
 	mosaic_blending   = PhotoScan.BlendingMode.MosaicBlending # Blending mode
