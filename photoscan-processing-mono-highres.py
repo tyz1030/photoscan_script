@@ -69,7 +69,7 @@ def process(images_path, output_path, model_name):
 	disabled_blending = PhotoScan.BlendingMode.DisabledBlending
 
 
-	face_num = PhotoScan.FaceCount.LowFaceCount # Build mesh polygon count
+	face_num = PhotoScan.FaceCount.MediumFaceCount # Build mesh polygon count
 	mapping = PhotoScan.MappingMode.GenericMapping #Build texture mapping
 	atlas_size = 4096
 	TYPES = ["jpg", "jpeg", "tif", "tiff", "png"]
@@ -167,14 +167,14 @@ def process(images_path, output_path, model_name):
 		progress=progress_print)
 	doc.save()
 	
-	###building mesh
-	# chunk.buildModel(
-	# 	surface = surface,
-	# 	source = source,
-	# 	interpolation = interpolation,
-	# 	face_count = face_num,
-	# 	progress=progress_print)
-	# doc.save()
+	##building mesh
+	chunk.buildModel(
+		surface = surface,
+		source = source,
+		interpolation = interpolation,
+		face_count = face_num,
+		progress=progress_print)
+	doc.save()
 
 
 	###build texture
