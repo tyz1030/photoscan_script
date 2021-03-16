@@ -54,7 +54,7 @@ def process(images_path, output_path, model_name):
 		
 	
 	### Processing parameters
-	accuracy = PhotoScan.Accuracy.HighAccuracy  #align photos accuracy
+	accuracy = PhotoScan.Accuracy.HighestAccuracy  #align photos accuracy
 	reference_preselection = False
 	generic_preselection = True
 	keypoints         = 40000 	# Align photos key point limit
