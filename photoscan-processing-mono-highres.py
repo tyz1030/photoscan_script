@@ -54,14 +54,14 @@ def process(images_path, output_path, model_name):
 		
 	
 	### Processing parameters
-	accuracy = PhotoScan.Accuracy.HighestAccuracy  #align photos accuracy
+	accuracy = PhotoScan.Accuracy.MediumAccuracy  #align photos accuracy
 	reference_preselection = False
 	generic_preselection = True
 	keypoints         = 40000 	# Align photos key point limit
 	tiepoints         = 4000 	# Align photos tie point limit
 	source            = PhotoScan.DataSource.DenseCloudData # Build mesh/DEM source
 	surface           = PhotoScan.SurfaceType.Arbitrary # Build mesh surface type
-	quality           = PhotoScan.Quality.MediumQuality # Build dense cloud quality
+	quality           = PhotoScan.Quality.LowQuality # Build dense cloud quality
 	filtering         = PhotoScan.FilterMode.AggressiveFiltering # Depth filtering
 	interpolation     = PhotoScan.Interpolation.EnabledInterpolation # Build mesh interpolation
 	mosaic_blending   = PhotoScan.BlendingMode.MosaicBlending # Blending mode
